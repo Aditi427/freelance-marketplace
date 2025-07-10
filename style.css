@@ -241,7 +241,7 @@ body {
   }
 }
 
-/* Job cards */
+
 .job-card {
   border: 2px solid #7b5cff;
   border-radius: 10px;
@@ -257,7 +257,7 @@ body {
   box-shadow: 0 8px 16px rgba(123, 92, 255, 0.4);
 }
 
-/* Navbar */
+
 .navbar {
   background: linear-gradient(90deg, #7b5cff, #3f51b5);
   color: white;
@@ -284,7 +284,7 @@ body {
   color: #d1c4e9;
 }
 
-/* Form */
+
 .auth-container {
   max-width: 400px;
   margin: 2rem auto;
@@ -325,7 +325,7 @@ body {
   background: #3f51b5;
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
   .auth-container {
     margin: 1rem;
@@ -342,6 +342,17 @@ body {
     margin-top: 0.5rem;
   }
 }
+
+.container h1 {
+  color: #00BFFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
 
 .job-item {
   background-color: #f5f7ff; 
