@@ -145,9 +145,45 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p>Budget: $${job.budget}</p>
             <p>Deadline: ${new Date(job.deadline).toLocaleDateString()}</p>
             <p>${job.description}</p>
+            <button class="apply-btn" data-id="${job._id}">Apply</button>
           `;
           jobsContainer.appendChild(div);
         });
+        document.querySelectorAll('.apply-btn').forEach(button => {
+        button.addEventListener('click', () => {
+        const jobId = button.dataset.id;
+        const coverLetter = prompt("Enter your cover letter:");
+        const bidAmount = prompt("Enter your bid amount:");
+        const deliveryTime = prompt("Enter delivery time (e.g., 5 days):");
+
+        if (!coverLetter || !bidAmount || !deliveryTime) {
+        alert("All fields are required to apply.");
+        return;
+        }
+
+        const token = localStorage.getItem('token');
+
+       fetch(`http://localhost:5000/api/jobs/${jobId}/apply`, 
+ {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({ coverLetter, bidAmount, deliveryTime })
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.message === 'Application submitted') {
+        alert('Successfully applied to the job!');
+        } else {
+        alert(data.message || 'Could not apply.');
+        }
+    })
+    .catch(() => alert('Error applying to job.'));
+  });
+});
+
       }
     } catch (err) {
       console.error('Failed to load jobs', err);
