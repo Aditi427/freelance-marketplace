@@ -343,6 +343,58 @@ body {
   }
 }
 
+.job-item {
+  background-color: #f5f7ff; 
+  border: 2px solid #6a4baf;
+  color: #00BFFF; 
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(106, 75, 175, 0.15); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(106, 75, 175, 0.3);
+  border-color: #483d8b; }
+
+.job-item h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color:#483d8b; 
+}
+
+.job-item p {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #483d8b;
+}
+
+.apply-btn {
+  background-color: #09b3d5; 
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(75, 57, 176, 0.3);
+}
+
+.apply-btn:hover {
+  background-color: #3a2e7e; 
+  transform: scale(1.05);
+}
+
+
 
 
 
