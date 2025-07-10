@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post a Job</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">FreelanceHub</div>
+    <nav>
+      <a href="dashboard-client.html">Dashboard</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <form id="postJobForm" class="auth-form">
+      <h2>Post a Job</h2>
+      <input type="text" id="jobTitle" placeholder="Job Title" required />
+      <input type="text" id="jobCategory" placeholder="Category" required />
+      <input type="number" id="jobBudget" placeholder="Budget ($)" required />
+      <input type="date" id="jobDeadline" required />
+      <textarea id="jobDescription" placeholder="Job Description" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+

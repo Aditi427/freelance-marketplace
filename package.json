@@ -1,0 +1,31 @@
+{
+  "name": "freelance-marketplace",
+  "version": "1.0.0",
+  "description": "This project is a full-stack freelance marketplace web app, tailored for students or small businesses. It enables clients to post job listings, freelancers to bid/apply, and admins to moderate and handle disputes. The application emphasizes secure authentication, role-based access, and seamless interaction between users.\r - **Client**: Post jobs, view applications, hire freelancers, rate them.\r - **Freelancer**: Browse jobs, apply with proposals, manage contracts, get rated.\r - **Admin**: View all jobs/users, resolve disputes, moderate inappropriate content.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aditi427/freelance-marketplace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aditi427/freelance-marketplace/issues"
+  },
+  "homepage": "https://github.com/Aditi427/freelance-marketplace#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
